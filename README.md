@@ -22,7 +22,7 @@ Traditional gradient descent method works in this way when qubit is random initi
 2. Check if state |01> and |10> are having 50% probability or very close to it depending on a threshold. For example: 48% |01> and 51% |10> state of occuring might be good enough according to threshold configured.
 3. Calculate gradient to nudge it to 50% probability |01> & |10>
 4. Update angle parameters with gradient.
-5. Continue again in loop from Step 1 until Step 2 threshold is satisfied.
+5. Continue again in loop from Step 1 to Step 4 until threshold is satisfied.
 
 The problem with this approach is that when you have to get state of very close to equal say 49% |01> and 51% |10> probability of occuring, you will have to take around 230 steps from the random initialisation of angle parameters.
 
